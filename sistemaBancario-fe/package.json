@@ -1,0 +1,11 @@
+{
+  "name": "sistema-bancario-fe",
+  "private": true,
+  "workspaces": ["banco"],
+  "scripts": {
+    "dev": "npm run dev -w banco",
+    "build": "npm run build -w banco",
+    "lint": "npm run lint -w banco",
+    "start": "npm run start -w banco"
+  }
+}

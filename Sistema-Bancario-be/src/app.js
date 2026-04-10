@@ -18,5 +18,6 @@ app.use((err, req, res, next) => {
   res.status(err.status || 500).json({ error: err.message });
 });
 
-const PORT = process.env.PORT || 3000;
+// 3001 por defecto para no chocar con Next.js (suele usar 3000)
+const PORT = Number(process.env.PORT) || 3001;
 app.listen(PORT, () => console.log(`🏦 Servidor en http://localhost:${PORT}`));
